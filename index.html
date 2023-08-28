@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="dist/assets/index-9a4c894c.css">
+</head>
+<body class="bg-[#e7e5e5] lg:bg-white">
+    <h1 class="text-center text-[#2b3f5d] font-bold text-3xl my-6 md:text-4xl lg:text-5xl md:my-7 lg:my-8 ">Weather App</h1>
+    <div class="flex flex-col justify-center w-[90%] mx-auto items-center mt-10 md:w-[60%] lg:w-[70%] lg:shadow lg:bg-[#e7e5e5] lg:mx-auto lg:rounded lg:p-10 lg:m-12">
+        <div class="grid grid-flow-row gap-3 w-full">
+            <input class=" py-2 text-[#2b3f5d] font-semibold px-2 rounded md:w-[80%] md:mx-auto placeholder:text-[#2b3f5d] placeholder:opacity-70" id="cityInput" placeholder="Enter city name" type="text" />
+            <button class="bg-[#2b3f5d] py-1 rounded activ:bg-[#577bae] w-[50%] mx-auto text-[#e7e5e5] md:w-[30%] md:py-1.5 md:text-lg" id="btnSubmit">Get Weather</button>
+        </div>
+        <div id="weatherIcon"></div>
+        <h1 id="weatherDegree" class="font-extrabold text-6xl mt-4 text-[#b5b3b5] md:text-7xl "></i></h1>
+        <p id="weatherDescription" class="font-semibold text-[#2b3f5d] mt-3 md:text-xl"></p>
+
+        <ol id="weatherDetail" class="grid grid-flow-col grid-rows-3 lg:grid-rows-1 lg:grid-flow-row lg:grid-cols-3 lg:text-center gap-2 text-sm mt-10 text-[#b5b3b5] font-semibold w-full">
+            <li ></li>
+            <li ></li>
+            <li ></li>
+        </ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
