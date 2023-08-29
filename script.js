@@ -10,7 +10,7 @@ const weatherIcon = document.getElementById('weatherIcon');
 
 async function getData (cityInputValue){
     try{
-    const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityInputValue}&appid=${API_KEY}&units=metric`)
+    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInputValue}&appid=${API_KEY}&units=metric`)
     if(!res.ok)
     {
         throw new Error ("Network response was not Ok");
